@@ -1,0 +1,29 @@
+<%- include("inc/header") -%>
+
+<div class="container">
+
+    <% if(typeof alert != "undefined") { %>
+        <% alert.forEach(function(error) { %>
+<div class="alert alert-warning alert-dismissible fade show">
+    <%= error %>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">x</span>
+    </button>
+</div>
+        <%})%>
+    <%}%>
+</div>
+
+<div class="rem_div">
+    <div class="remove_div">
+        <form class="rem_form" action="/remove" method="post">
+            <label>Enter Your User Email:</label>
+            <input type="email" name="removeemail" placeholder="...user email" required autofocus autocomplete="off">
+            <label>Enter Your User Password:</label>
+            <input type="password" name="removepass" placeholder="...user password" required>
+            <button type="submit">Remove My Account</button>
+        </form>
+    </div>
+</div>
+
+<%- include("inc/footer") -%>

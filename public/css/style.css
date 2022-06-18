@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* header ++++++++++++++++++++++++++++ */
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title_div a {
+    color: goldenrod;
+    text-shadow: 1px 1px 1px gray;
+    text-decoration: none;
+}
+.title_div a:hover {
+    text-decoration: none;
+    color: gold;
+    text-shadow: 1px 1px 1px gray;
+
+}
+.title {
+    font-size: 10vh;
+    font-family: 'Nuosu SIL', serif;
+    margin-left: 5px;
+}
+
+/* footer ++++++++++++++++++++++++++++ */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod;
+    width: 100%;
+}
+.copyright {
+    font-family: 'Nuosu SIL', serif;
+}
+
+/* navpage ++++++++++++++++++++++++++++ */
+
+.nav_div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img_div {
+    display: flex;
+    justify-content: center;
+}
+.btn_div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.btn_div button {
+    margin: 3px;
+    background-color: black;
+    box-shadow: 1px 1px 1px gray;
+}
+.btn_div button:hover {
+    background-color: goldenrod;
+    box-shadow: 1px 1px 1px black;
+}
+.btn_div a {
+    padding: 3px;
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 4vh;
+    font-family: 'Nuosu SIL', serif;
+}
+.btn_div a:hover {
+    text-decoration: none;
+    color: black;
+}
+/* login ++++++++++++++++++++++++++++ */
+
+.form_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.login_div {
+    display: flex;
+    box-shadow: 1px 1px 1px gray;
+}
+.login_form {
+    display: flex;
+    flex-direction: column;
+    background-color: goldenrod;
+    padding: 20px;
+}
+.login_form input, .login_form label {
+    margin-bottom: 5px;
+    font-size: 4vh;
+    font-family: 'Nuosu SIL', serif;
+}
+.login_form a {
+    text-align: center;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Nuosu SIL', serif;
+}
+.login_form button {
+    margin-top: 5px;
+    color: goldenrod;
+    background-color: black;
+    font-size: 3vh;
+    font-family: 'Nuosu SIL', serif;
+}
+.login_form a:hover {
+    text-decoration: none;
+    color: black;
+    text-shadow: 0.5px 0.5px 0.2px grey;
+}
+.login_form button:hover {
+    background-color: goldenrod;
+    color: black;
+    box-shadow: 1px 1px 1px black;
+}
+
+/* register ++++++++++++++++++++++++++++ */
+
+.sign_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.register_div {
+    display: flex;
+    box-shadow: 1px 1px 1px gray;
+}
+.sign_form {
+    display: flex;
+    flex-direction: column;
+    background-color: goldenrod;
+    padding: 20px;
+}
+.sign_form input, .sign_form label {
+    margin-bottom: 5px;
+    font-size: 4vh;
+    font-family: 'Nuosu SIL', serif;
+}
+.sign_form a {
+    text-align: center;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Nuosu SIL', serif;
+}
+.sign_form button {
+    margin-top: 5px;
+    color: goldenrod;
+    background-color: black;
+    font-size: 3vh;
+    font-family: 'Nuosu SIL', serif;
+}
+.sign_form a:hover {
+    text-decoration: none;
+    color: black;
+    text-shadow: 0.5px 0.5px 0.2px grey;
+}
+.sign_form button:hover {
+    background-color: goldenrod;
+    color: black;
+    box-shadow: 1px 1px 1px black;
+}
+
+/* resetpassword ++++++++++++++++++++++++++++ */
+
+.set_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.forgot_div {
+    display: flex;
+    box-shadow: 1px 1px 1px gray;
+}
+.newpass_div {
+    display: flex;
+    box-shadow: 1px 1px 1px gray;
+}
+.set_form {
+    display: flex;
+    flex-direction: column;
+    background-color: goldenrod;
+    padding: 20px;
+}
+.set_form input, .set_form label {
+    margin-bottom: 5px;
+    font-size: 4vh;
+    font-family: 'Nuosu SIL', serif;
+}
+.set_form p {
+    margin-bottom: 5px;
+    font-size: 4vh;
+    font-family: 'Nuosu SIL', serif;
+    color: goldenrod;
+    background-color: black;
+    box-shadow: 1px 1px 1px gray;
+    padding: 5px; 
+}
+.set_form button {
+    margin-top: 5px;
+    color: goldenrod;
+    background-color: black;
+    font-size: 3vh;
+    font-family: 'Nuosu SIL', serif;
+}
+.set_form button:hover {
+    background-color: goldenrod;
+    color: black;
+    box-shadow: 1px 1px 1px black;
+}
+
+/* removeacount ++++++++++++++++++++++++++++ */
+
+
+.rem_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.remove_div {
+    display: flex;
+    box-shadow: 1px 1px 1px gray;
+}
+.rem_form {
+    display: flex;
+    flex-direction: column;
+    background-color: goldenrod;
+    padding: 20px;
+}
+.rem_form input, .rem_form label {
+    margin-bottom: 5px;
+    font-size: 4vh;
+    font-family: 'Nuosu SIL', serif;
+}
+.rem_form p {
+    margin-bottom: 5px;
+    font-size: 4vh;
+    font-family: 'Nuosu SIL', serif;
+    color: goldenrod;
+    background-color: black;
+    box-shadow: 1px 1px 1px gray;
+    padding: 5px; 
+}
+.rem_form button {
+    margin-top: 5px;
+    color: goldenrod;
+    background-color: black;
+    font-size: 3vh;
+    font-family: 'Nuosu SIL', serif;
+}
+.rem_form button:hover {
+    background-color: goldenrod;
+    color: black;
+    box-shadow: 1px 1px 1px black;
+}
+
+/* changepassword ++++++++++++++++++++++++++++ */
+
+.pass_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.change_div {
+    display: flex;
+    box-shadow: 1px 1px 1px gray;
+}
+.pass_form {
+    display: flex;
+    flex-direction: column;
+    background-color: goldenrod;
+    padding: 20px;
+}
+.pass_form input, .pass_form label {
+    margin-bottom: 5px;
+    font-size: 4vh;
+    font-family: 'Nuosu SIL', serif;
+}
+.pass_form p {
+    margin-bottom: 5px;
+    font-size: 4vh;
+    font-family: 'Nuosu SIL', serif;
+    color: goldenrod;
+    background-color: black;
+    box-shadow: 1px 1px 1px gray;
+    padding: 5px; 
+}
+.pass_form button {
+    margin-top: 5px;
+    color: goldenrod;
+    background-color: black;
+    font-size: 3vh;
+    font-family: 'Nuosu SIL', serif;
+}
+.pass_form button:hover {
+    background-color: goldenrod;
+    color: black;
+    box-shadow: 1px 1px 1px black;
+}
+
+/* bank ++++++++++++++++++++++++++++ */
+
+.will_div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.navtabs {
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.navtabs a {
+    margin-right: 10px;
+    border-right: 1px solid black;
+    padding-right: 2px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Nuosu SIL', serif;
+}
+.navtabs a:hover {
+    text-decoration: none;
+    color: black;
+    text-shadow: 0.5px 0.5px 0.2px grey;
+}
+.hide {
+    display: none;
+}
+.add_div {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.show_div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+.show_div h2 {
+    margin-bottom: 10px;
+    font-family: 'Nuosu SIL', serif;
+}
+.show_div p {
+    font-size: 3vh;
+    font-family: 'Nuosu SIL', serif;
+    word-wrap: break-word;
+}
+.show_div button {
+    margin-top: 5px;
+    color: goldenrod;
+    background-color: black;
+    font-size: 3vh;
+    font-family: 'Nuosu SIL', serif;
+}
+.add_form {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px gray;
+    background-color: goldenrod;
+}
+.add_form textarea {
+    font-family: 'Nuosu SIL', serif;
+    font-size: 3vh;
+    padding: 3px;
+}
+.add_form button {
+    margin-bottom: 2px;
+    color: goldenrod;
+    background-color: black;
+    font-size: 3vh;
+    font-family: 'Nuosu SIL', serif;
+}
+.add_form button:hover {
+    background-color: goldenrod;
+    color: black;
+    box-shadow: 1px 1px 1px black;
+}
+.show_div button:hover {
+    background-color: goldenrod;
+    color: black;
+    box-shadow: 1px 1px 1px black;
+}
+
+/* header MQ ++++++++++++++++++++++++++++ */
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 5vh;
+    }
+    .login_form input, .login_form label {
+        font-size: 2vh;
+    }
+    .login_form button {
+        font-size: 1.7vh;
+    }
+    .sign_form input, .sign_form label {
+        font-size: 2vh;
+    }
+    .sign_form button {
+        font-size: 1.7vh;
+    }
+    .set_form input, .set_form label {
+        font-size: 2vh;
+    }
+    .set_form button {
+        font-size: 1.7vh;
+    }
+    .set_form p {
+        font-size: 2vh;
+    }
+    .rem_form input, .rem_form label {
+        font-size: 2vh;
+    }
+    .rem_form p {
+        font-size: 2vh; 
+    }
+    .rem_form button {
+        font-size: 1.7vh;
+    }
+    .pass_form p {
+        font-size: 2vh;
+    }
+    .pass_form input, .pass_form label {
+        font-size: 2vh;
+    }
+    .pass_form button {
+        font-size: 1.7vh;
+    }
+    .show_div {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .add_form textarea {
+        font-size: 2vh;
+        max-width: 200px;
+    }
+    .add_div {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .show_div p {
+        font-size: 2vh;
+        font-family: 'Nuosu SIL', serif;
+    }
+    .show_div button {
+        margin-top: 5px;
+        color: goldenrod;
+        background-color: black;
+        font-size: 1.7vh;
+        font-family: 'Nuosu SIL', serif;
+    }
+    .add_form button {
+        font-size: 1.7vh;
+    }
+    .navtabs a {
+        font-size: 2vh;
+    }
+    .sign_form a {
+       font-size: 2vh;
+    }
+    .login_form a {
+       font-size: 2vh; 
+    }
+  }
+  
+

@@ -1,0 +1,35 @@
+<%- include("inc/header") -%>
+
+
+<div class="container">
+
+    <% if(typeof alert != "undefined") { %>
+        <% alert.forEach(function(error) { %>
+<div class="alert alert-warning alert-dismissible fade show">
+    <%= error %>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">x</span>
+    </button>
+</div>
+        <%})%>
+    <%}%>
+
+
+</div>
+
+<div class="sign_div">
+    <div class="register_div">
+        <form class="sign_form" action="/register" method="post">
+            <label for="username">Email:</label>
+            <input type="email" name="username" placeholder="email..." autofocus autocomplete="off" required>
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="name..." autocomplete="off" required>
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="password..." required>
+            <button type="submit" name="sign_btn">SignUp</button>
+            <a href="/login">Already have an account? Login!</a>
+        </form>
+    </div>
+</div>
+
+<%- include("inc/footer") -%>

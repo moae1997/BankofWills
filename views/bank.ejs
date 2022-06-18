@@ -1,0 +1,41 @@
+<%- include("inc/header") -%>
+
+
+<div class="will_div">
+
+<div class="navtabs">
+    <a href="/logout">Log Out</a>
+    <a href="/remove">Remove Account</a>
+    <a href="/changePassword">Change Password</a>
+</div>
+
+<div id="showDiv">
+    <div class="add_div">
+        <form class="add_form" action="/will" method="post"> 
+            <textarea type="text" name="myWill" cols="50" rows="10" placeholder="Type your will here..."></textarea>
+            <button type="submit">Save</button>
+            <button id="showWill">Show my will</button>
+        </form>
+    </div>
+</div>
+
+<div id="addDiv" class="hide">
+    <div class="show_div"> 
+        <h2>The Will of <%=user%></h2>  
+        <% Willlist.forEach(function(will) { %>   
+                <p><%=will%></p>
+        <% }); %>
+        <form action="/delete" method="post">   
+            <input name="check" type="checkbox" onchange="this.form.submit()">
+            <label>Remove Will</label>
+        </form>
+        <button id="addWill">Add to Your Will</button>
+    </div>
+</div>
+
+</div>
+
+<%- include("inc/footer") -%>
+
+
+
