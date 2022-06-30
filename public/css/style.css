@@ -473,6 +473,9 @@
         font-size: 2vh;
         max-width: 150px;
     }
+    #mytextarea {
+        width: 100px;
+    }
     .add_div {
         padding-left: 50px;
         padding-right: 50px;
