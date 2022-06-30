@@ -1,4 +1,19 @@
 <%- include("inc/header") -%>
+<div class="container">
+
+    <% if(typeof alert != "undefined") { %>
+        <% alert.forEach(function(error) { %>
+<div class="alert alert-warning alert-dismissible fade show">
+    <%= error %>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">x</span>
+    </button>
+</div>
+        <%})%>
+    <%}%>
+
+
+</div>
 
 
 <div class="will_div">
@@ -12,8 +27,9 @@
 <div id="showDiv">
     <div class="add_div">
         <form class="add_form" action="/will" method="post"> 
-            <textarea type="text" name="myWill" cols="50" rows="10" placeholder="Type your will here..."></textarea>
-            <button type="submit">Save</button>
+            <textarea id="mytextarea" type="text" name="myWill" cols="30" rows="10" placeholder="Type your will here..."><%-draft%></textarea>
+            <button type="submit" name="savebtn" value="save">Save</button>
+            <button type="submit" name="draftbtn" value="draft">Save Progress</button>
             <button id="showWill">Show my will</button>
         </form>
     </div>
@@ -23,7 +39,7 @@
     <div class="show_div"> 
         <h2>The Will of <%=user%></h2>  
         <% Willlist.forEach(function(will) { %>   
-                <p><%=will%></p>
+                <p><%-will%></p>
         <% }); %>
         <form action="/delete" method="post">   
             <input name="check" type="checkbox" onchange="this.form.submit()">

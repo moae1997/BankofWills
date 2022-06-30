@@ -17,12 +17,13 @@
 
 <div class="form_div">
     <div class="login_div">
-        <form class="login_form" action="/login" method="post">
+        <form class="login_form" id="formDemo" action="/login" method="post">
             <label>Email:</label>
-            <input type="email" name="username" placeholder="email..." autofocus autocomplete="off" required>
+            <input class="demo2" type="email" name="username" placeholder="email..." autofocus autocomplete="off" required>
             <label>Password:</label>
-            <input type="password" name="password" placeholder="password..." required>
+            <input class="demo1" type="password" name="password" placeholder="password..." required>
             <button type="submit" name="login_btn">Login</button>
+            <button type="button" class="nav_btn" id="demo">Demo</button>
             <a href="/register">Don't have an account? Signup!</a>
             <a href="/forgotPassword">Forgot password?</a>
         </form>
