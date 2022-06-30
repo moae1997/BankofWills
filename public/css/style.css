@@ -423,6 +423,9 @@
     .title {
         font-size: 5vh;
     }
+    .information {
+        padding: 3px;
+    }
     .information h4 {
         font-size: 2vh;
     }
@@ -469,12 +472,11 @@
         padding-left: 50px;
         padding-right: 50px;
     }
+    .add_form {
+        width: 100px;
+    }
     .add_form textarea {
         font-size: 2vh;
-        max-width: 150px;
-    }
-    #mytextarea {
-        width: 100px;
     }
     .add_div {
         padding-left: 50px;
