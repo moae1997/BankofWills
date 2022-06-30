@@ -440,6 +440,6 @@ function demo5 (req, res, next) {
 }
 
 // Server ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-app.listen(3000, function(req, res) {
+app.listen(process.env.PORT, function(req, res) {
     console.log("Welcome to the Bank of Wills!");
 });
