@@ -423,6 +423,9 @@
     .title {
         font-size: 5vh;
     }
+    .information h4 {
+        font-size: 2vh;
+    }
     .login_form input, .login_form label {
         font-size: 2vh;
     }
@@ -468,7 +471,7 @@
     }
     .add_form textarea {
         font-size: 2vh;
-        max-width: 200px;
+        max-width: 150px;
     }
     .add_div {
         padding-left: 50px;
