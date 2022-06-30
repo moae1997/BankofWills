@@ -298,7 +298,7 @@ app.post("/passwordset", demo5, function(req, res){
               });
               
               const mailOptions = {
-                from: process.env.emails,
+                from: process.env.email,
                 to: user.username,
                 subject: 'Password Reset For Will Bank!',
                 text: link
