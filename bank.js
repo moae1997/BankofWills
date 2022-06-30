@@ -22,7 +22,7 @@ const app = express();
 
 // mongoose connection ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-const connect = mongoose.connect("mongodb://localhost:27017/willDB");
+const connect = mongoose.connect(process.env.Mongo);
 const willSchema = new mongoose.Schema({
     username: {
         type: String,
@@ -53,7 +53,7 @@ app.use(session({
     saveUninitialized: true,
     rolling: true,
     store: MongoStore.create({
-        mongoUrl: "mongodb://localhost:27017",
+        mongoUrl: process.env.mongo2,
         dbName: "willDB",
         collectionName: "sessions"
     }),
@@ -440,6 +440,6 @@ function demo5 (req, res, next) {
 }
 
 // Server ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-app.listen(3000, function(req, res) {
+app.listen(process.env.PORT, function(req, res) {
     console.log("Welcome to the Bank of Wills!");
 });
