@@ -424,7 +424,7 @@
         font-size: 5vh;
     }
     .information {
-        padding: 3px;
+        padding: 10px;
     }
     .information h4 {
         font-size: 2vh;
@@ -473,7 +473,7 @@
         padding-right: 50px;
     }
     .add_form {
-        width: 100px;
+        width: 200px;
     }
     .add_form textarea {
         font-size: 2vh;
